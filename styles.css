@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    background-color: #000000;  /* Darkest black background */
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;  /* Slightly lighter header background */
+    border-bottom: 2px solid #d56696;  /* Border to highlight header */
+    position: relative;
+    background-image: url('banner.png'); /* Add your background image here */
+    
+    background-position: center; /* Center-align the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */ 
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #d56696;  /* Border around profile image */
+}
+
+.header-content h1 a {
+    color: #d56696;  /* Vibrant link color */
+    font-family:'algerian';
+    text-decoration: none;
+}
+
+.header-content h1 a:hover {
+    color: #FFFFFF;  /* Change color on hover */
+}
+
+.header-content p {
+    margin: 5px 0;
+    color: #e78484;  /* Add color to subtitle */
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between the stats items */
+    padding: 10px; /* Padding around the stats section */
+    border-radius: 5px; /* Rounded corners for the border */
+    background-color: white;
+    width: 25%; /* Adjust this value to your desired width */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+#projectCount {
+    color: #4a90e2; /* Different color for projects */
+}
+
+#projectCount:hover {
+    color: #FF79C6; /* Change color on hover */
+}
+
+#viewCount {
+    color: #e94e77; /* Different color for YouTube views */
+}
+
+#viewCount:hover {
+    color: #8BE9FD; /* Change color on hover */
+}
+
+.github-stats {
+    padding: 20px;
+    text-align: center;
+    background-color: #d0c137;  /* Match header background */
+    margin: 20px auto;  /* Center the GitHub stats section */
+    border-radius: 10px;
+    border: 2px solid #b662a8;  /* Border for GitHub stats section */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Shadow for depth */
+    max-width: 800px;  /* Restrict the width */
+}
+
+.github-stats h2 {
+    color: #37142e;  /* Section heading color */
+}
+
+.github-stats ul {
+    list-style: none;
+    padding: 0;
+}
+
+.github-stats ul li {
+    background-color: #1A1A1A;  /* Dark background for list items */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
+    color: #FFFFFF;  /* Text color */
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.github-stats ul li:hover {
+    background-color: #333333;  /* Change background on hover */
+}
+
+.github-stats ul li .label {
+    color: #FF79C6;  /* Pink text color for labels */
+}
+
+.github-stats ul li .value {
+    color: #8BE9FD;  /* Cyan text color for values */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;  /* Match header background */
+    border-top: 2px solid #cd5fa3;  /* Border to highlight footer */
+}
+
+.socials a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #1A1A1A;  /* Dark background for social links */
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.socials a:hover {
+    background-color: #cd5fa3;  /* Highlight on hover */
+    color: #121212;  /* Change text color on hover */
+}
+
+.socials a.website { background-color: #0D7377; }
+.socials a.gmail { background-color: #D44638; }
+.socials a.github { background-color: #6e5494; }
+.socials a.linkedin { background-color: #0077b5; }
+.socials a.twitter { background-color: #1da1f2; }
+.socials a.youtube { background-color: #ff0000; }
+.socials a.medium { background-color: #00ab6c; }
+.socials a.hashnode { background-color: #2962FF; }
+.socials a.devpost { background-color: #003E54; }
+.socials a.leetcode { background-color: #F89F1B; }
+.socials a.stack-overflow { background-color: #F48024; }
+.socials a.instagram { background-color: #E4405F; }
+.socials a.discord { background-color: #7289da; }
+
+#projects {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between items */
+}
+
+.project-item {
+    font-family:'Segoe UI';
+    background-color: #0a0a0a;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-item h3 {
+    font-family:Aharoni;
+    margin-top: 0;
+    font-size: 1.25em;
+    color: #e7cf66;
+}
+
+.project-item p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #f6f1f1;
+}
+
+.project-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e3acd8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.project-item a:hover {
+    color: #FFFFFF; /* Change color on hover */
+    text-decoration: underline;
+}
