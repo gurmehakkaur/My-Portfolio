@@ -29,8 +29,8 @@ function fetchGitHubStats() {
         });
 }
 async function fetchYouTubeStats() {
-    const API_KEY = 'AIzaSyBnlNQHHQFoiCMOejXCUVxuiHGQEszQUys'; // Replace with your actual API key
-    const CHANNEL_ID = 'UC4J2rUidGvnoStAoVVCpa5Q'; // Replace with your actual channel ID
+    const API_KEY = 'secret'; 
+    const CHANNEL_ID = 'secret';
 
     const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
 
