@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     justify-content: center;
-    background-color: #000000;  /* Darkest black background */
+    background-color: #000000;  
     color: #FFFFFF;
     margin: 0;
     padding: 0;
@@ -10,77 +10,77 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #121212;  /* Slightly lighter header background */
-    border-bottom: 2px solid #d56696;  /* Border to highlight header */
+    background-color: #121212;  
+    border-bottom: 2px solid #d56696;  
     position: relative;
-    background-image: url('banner.png'); /* Add your background image here */
+    background-image: url('banner.png'); 
     
-    background-position: center; /* Center-align the background image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */ 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .profile-img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    border: 3px solid #d56696;  /* Border around profile image */
+    border: 3px solid #d56696;
 }
 
 .header-content h1 a {
-    color: #d56696;  /* Vibrant link color */
+    color: #d56696; 
     font-family:'algerian';
     text-decoration: none;
 }
 
 .header-content h1 a:hover {
-    color: #FFFFFF;  /* Change color on hover */
+    color: #FFFFFF; 
 }
 
 .header-content p {
     margin: 5px 0;
-    color: #e78484;  /* Add color to subtitle */
+    color: #e78484;  
 }
 
 .stats {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Space between the stats items */
-    padding: 10px; /* Padding around the stats section */
-    border-radius: 5px; /* Rounded corners for the border */
+    gap: 10px; 
+    padding: 10px; 
+    border-radius: 5px; 
     background-color: white;
-    width: 25%; /* Adjust this value to your desired width */
-    margin: 0 auto; /* Center the element horizontally */
+    width: 25%; 
+    margin: 0 auto; 
 }
 
 #projectCount {
-    color: #4a90e2; /* Different color for projects */
+    color: #4a90e2; 
 }
 
 #projectCount:hover {
-    color: #FF79C6; /* Change color on hover */
+    color: #FF79C6;
 }
 
 #viewCount {
-    color: #e94e77; /* Different color for YouTube views */
+    color: #e94e77; 
 }
 
 #viewCount:hover {
-    color: #8BE9FD; /* Change color on hover */
+    color: #8BE9FD;
 }
 
 .github-stats {
     padding: 20px;
     text-align: center;
-    background-color: #d0c137;  /* Match header background */
-    margin: 20px auto;  /* Center the GitHub stats section */
+    background-color: #d0c137; 
+    margin: 20px auto;
     border-radius: 10px;
-    border: 2px solid #b662a8;  /* Border for GitHub stats section */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Shadow for depth */
-    max-width: 800px;  /* Restrict the width */
+    border: 2px solid #b662a8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  
+    max-width: 800px;  
 }
 
 .github-stats h2 {
-    color: #37142e;  /* Section heading color */
+    color: #37142e;  
 }
 
 .github-stats ul {
@@ -89,12 +89,12 @@ header {
 }
 
 .github-stats ul li {
-    background-color: #1A1A1A;  /* Dark background for list items */
+    background-color: #1A1A1A; 
     margin: 10px 0;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Shadow for depth */
-    color: #FFFFFF;  /* Text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+    color: #FFFFFF;  
     font-weight: bold;
     display: flex;
     justify-content: space-between;
