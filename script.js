@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetchGitHubStats();
     fetchYouTubeStats();
     // Add more functions for other platforms as needed
-});
+}); 
 
 function fetchGitHubStats() {
     fetch('https://api.github.com/users/gurmehakkaur')

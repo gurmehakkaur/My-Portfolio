@@ -3,7 +3,7 @@ body {
     justify-content: center;
     background-color: #000000;  
     color: #FFFFFF;
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
 
@@ -26,10 +26,18 @@ header {
     border: 3px solid #d56696;
 }
 
-.header-content h1 a {
-    color: #d56696; 
-    font-family:'algerian';
+.header-content h1 {
+    color: #eee8eb; 
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+}
+
+#subheading{
+    colour:Pink;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-size: 19px;
 }
 
 .header-content h1 a:hover {
@@ -53,19 +61,19 @@ header {
 }
 
 #projectCount {
-    color: #4a90e2; 
+    color: #070707; 
 }
 
 #projectCount:hover {
-    color: #FF79C6;
+    color: #954a74;
 }
 
 #viewCount {
-    color: #e94e77; 
+    color: #070707; 
 }
 
 #viewCount:hover {
-    color: #8BE9FD;
+    color: #954a74;
 }
 
 .github-stats {
