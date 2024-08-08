@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurmehak's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body> 
     <header>
@@ -14,72 +16,102 @@
             <h1>{ Gurmehak Kaur Uppal }</h1>
             <p id="subheading">Computer Programming and Analysis @ Seneca Polytechnic</p>
             <div class="stats">
-                <span id="projectCount">Projects: 4</span>
+                <span id="projectCount"><a href="#projects">Projects</a>: 4</span>
                 <span id="viewCount">Youtube Views: 0</span>
             </div>
     </header>
 
     <section class="github-stats">
-        <h2>My GitHub Stats</h2>
+        <h2 class="section-title"><<<< GitHub Stats >>>></h2>
         <ul>
             <li id="stars">Total Stars Earned: 0</li>
             <li id="commits">Total Commits (2024): 0</li>
             <li id="prs">Total PRs: 0</li>
             <li id="issues">Total Issues: 0</li>
-            <li id="contributions">Contributed to (last year): 0</li>
+            
         </ul>
     </section>
 
-<section id="projects">
-    <div class="project-grid">
-        <div class="project-item">
-            <h3>Project 1: Delivery Company Simulator</h3>
-            <p>I developed an intelligent routing system for a local delivery company operating within a city. This system 
-                optimizes routes for three delivery trucks, ensuring efficient package deliveries while considering truck capacity limits.
-                It calculates the shortest paths avoiding obstacles, and assigns 
-                packages to the truck that requires the least deviation from its route. The system also balances loads by comparing available 
-                weight and volume capacity, ensuring optimal resource utilization. If no truck can accommodate a package, it's stored for 
-                next-day delivery.</p>
-                <div class="stack"><h4>Tech Stack: C/C++</h4></div>
-            <a href="https://github.com/gurmehakkaur/Delivery-company-App" target="_blank">View Project</a>
+    <section id="projects">
+        <h2 class="section-title"><<<< Projects >>>></h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Project 1: Delivery Company Simulator</h3>
+                    <p>I developed an intelligent routing system for a local delivery company operating within a city. This system optimizes routes for three delivery trucks, ensuring efficient package deliveries while considering truck capacity limits. It calculates the shortest paths avoiding obstacles, and assigns packages to the truck that requires the least deviation from its route. The system also balances loads by comparing available weight and volume capacity, ensuring optimal resource utilization. If no truck can accommodate a package, it's stored for next-day delivery.</p>
+                    <div class="stack"><h4>Tech Stack: C/C++</h4></div>
+                    <a href="https://github.com/gurmehakkaur/Delivery-company-App" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Project 2: Patient Appointment Booking App</h3>
+                    <p>This project simulates an app for a local veterinary clinic. It has all the functions required to edit and view a clinic database. It lets you manage patients as you can- View, search, add, edit and remove a patient record. Similarly, you can add and remove appointments, and can view them, even filtering by date. The data is stored in a comma-separated file. This project mainly uses structures, file input/output operations and pointers. The project is focused on modular programming, and each module is designed to be cohesive and loosely coupled with others.</p>
+                    <div class="stack"><h4>Tech Stack: C</h4></div>
+                    <a href="https://github.com/gurmehakkaur/Patient-Appointment-Booking-App/" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Project 3: TeachMe Educational Platform</h3>
+                    <p>This DBMS project focused on designing and building a comprehensive backend database for an educational platform that supports user management, course catalog, student enrollments, instructors' data, assessments (tests and scores), advertisements, and certifications. This model clearly defines each table and its relationship with other tables, to provide an effective Entity Relationship model. Business Rules for each relationship are clearly defined as well.</p>
+                    <div class="stack"><h4>Tech Stack: Oracle SQL Developer, Draw.io</h4></div>
+                    <a href="https://github.com/gurmehakkaur/gurmehakkaur/blob/main/DBMS/TeachME/" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                
+                <div class="project-content">
+                    <h3>Project 4: My Portfolio Website</h3>
+                    <p>This website itself is no less than a project, because it has been purely designed and built by me. The main part of this website is that it showcases real-time stats from my Github account and Youtube channel. I connected my Github using fetchGitHubStats() which requested data from my gitHub and the response was used by innerHtml. Connecting Youtube was a bit complicated as I had to first generate API key in order to fetch real-time data from Youtube.</p>
+                    <div class="stack"><h4>Tech Stack: HTML, CSS, JS</h4></div>
+                    <a href="https://github.com/gurmehakkaur/My-Portfolio" target="_blank">View Project</a>
+                </div>
+            </div>
         </div>
-        <div class="project-item">
-            <h3>Project 2: Patient Appointment Booking App</h3>
-            <p>This project simulates an app for a local vertenary clinic. It has all the functions required to edit and view a clinic database.
-                It lets you manage patients as you can- View, search, add, edit and remove a patient record. Similarly, you can add and remove
-                appointments, and can view them, even filtering by date. The data is stored in a comma-seperated file. 
-                This project mainly uses structures, file input/output operations and pointers. The project is foccussed on modular programming, 
-                and each module is designed to be cohesive and loosely coupled with others.              
-            </p>
-           
-            <div class="stack"><h4>Tech Stack: C </h4></div>
-            <a href="https://github.com/gurmehakkaur/Patient-Appointment-Booking-App/" target="_blank">View Project</a>
-        </div>
-        <div class="project-item">
-            <h3>Project 3: TeachMe Educational Platform</h3>
-            <p>This DBMS project foccussed on designing and building a comprehensive backend database for an educational platform 
-                that supports user management, course catalog, student enrollments, instructors' data, assessments (tests and scores), 
-                advertisements, and 
-                certifications. This model clearly defines each table and its relationship with other tables, to provide an effective 
-                Entity Relatioship model. Business Rules for each relationship are clearly defined as well.</p>
-                <div class="stack"><h4>Tech Stack: Oracle SQL Developer, Draw.io  </h4></div>
-            <a href="https://github.com/gurmehakkaur/gurmehakkaur/blob/main/DBMS/TeachME/" target="_blank">View Project</a>
-        </div>
-        <div class="project-item">
-            <h3>Project 4: My Portfolio Website</h3>
-            <p>This website itself is no less than a project, because it has been purely designed and built by me. The main part of this 
-                website is that it showcases real-time stats from my Github account and Youtube channel. I connected my Github using 
-                fetchGitHubStats() which requested data from my gitHub and the response was used by innerHtml. Connecting Youtube was a 
-                bit complicated as I had to first generate API key in order to fetch real time data from Youtube.</p>
-            <div class="stack"><h4>Tech Stack: Html, CSS, JS</h4></div>
-            <a href="https://link-to-project4.com" target="_blank">View Project</a>
-        </div>
-    </div>
-</section>
+    </section>
 
+    <section id="youtube">
+        <div class="left-div">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RGh1lfFFUWI?si=u50zzjqlorHQPEAQ" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+        <div class="right-div">
+            <h2 class="section-title"><<<< Latest Podcast >>>></h2>
+            <p> Watch out this latest video to know how my friend, Sukhmanpreet Kaur secured a Software Developer role at a leading Canadian bank, RBC 
+                while completing her diploma at Seneca Polytechnic. </p>
+                <br>
+                <p> There is no later, Watch this video Now!! </p>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <div class="first">
+            <img class="icons" src="cc++.png">
+            <h2> C/C++ </h2>
+            <p> Strong foundation in C/C++ concepts, with in depth understanding of four pillars of object oriented programming, Time and 
+                Space complexity, Dynamic Memory Management etc.
+            </p>
+        </div>
+        <div class="second">
+            <img class="icons" src="webdev.png">    
+            <h2> Web Development </h2>
+            <p>Proficient in creating responsive and interactive web applications using HTML, CSS, and JavaScript. Experience with modern 
+                frameworks and tools to build seamless user experiences.</p>
+        </div>
+        <div class="third">
+            <img class="icons" src="dbs.png">      
+            <h2> Oracle SQL, MySql </h2>       
+            <p>Skilled in designing and managing relational databases using Oracle SQL and MySQL. Expertise in writing complex queries, 
+                optimizing performance, and ensuring data integrity.</p>
+        </div>
+    </section>
+        
     <footer>
         <div class="socials">
-            <a href="your-website-link" class="website">Website</a>
+            <a href="https://askgurmehak.netlify.app" class="website">Website</a>
             <a href="mailto:gurmehakuppal05@gmail.com" class="gmail">Gmail</a>
             <a href="https://github.com/gurmehakkaur" class="github">GitHub</a>
             <a href="https://www.linkedin.com/in/gurmehakkauruppal/" class="linkedin">LinkedIn</a>
@@ -90,6 +122,7 @@
             <a href="https://devpost.com/gurmehakuppal" class="devpost">Devpost</a>
         </div>
     </footer>
+    <script>src="https://www.youtube.com/iframe_api"</script>  
     <script src="script.js"></script>
 </body>
 </html>

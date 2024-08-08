@@ -1,9 +1,41 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     fetchGitHubStats();
     fetchYouTubeStats();
-    // Add more functions for other platforms as needed
-}); 
 
+    var player;
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-player', {
+            height: '315',
+            width: '560',
+            videoId: 'RGh1lfFFUWI&t', 
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+ 
+    function onPlayerReady(event) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    player.playVideo();
+                } else {
+                    player.pauseVideo(); 
+                }
+            });
+        }, { threshold: 0.5 }); 
+
+        observer.observe(document.getElementById('youtube-player'));
+    }
+
+
+}); 
+       
+       
+    
 function fetchGitHubStats() {
     fetch('https://api.github.com/users/gurmehakkaur')
         .then(response => response.json())
@@ -29,8 +61,8 @@ function fetchGitHubStats() {
         });
 }
 async function fetchYouTubeStats() {
-    const API_KEY = 'secret'; 
-    const CHANNEL_ID = 'secret';
+    const API_KEY = 'confidential'; 
+    const CHANNEL_ID = 'confidential';
 
     const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
 
@@ -42,12 +74,12 @@ async function fetchYouTubeStats() {
         const data = await response.json();
         const viewCount = data.items[0].statistics.viewCount;
 
-        // Display the view count on your webpage
+        
         document.getElementById('viewCount').textContent = `Youtube Views: ${viewCount}`;
     } catch (error) {
         console.error('Failed to fetch YouTube stats:', error);
     }
 }
 
-// Call the function to fetch and display the stats
-fetchYouTubeStats();
+
+
