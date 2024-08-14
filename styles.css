@@ -11,68 +11,6 @@ body {
     padding: 0;
 }
 
-header {
-    text-align: center;
-    padding: 20px;
-    background-color: #121212;  
-    border-bottom: 2px solid #d56696;  
-    position: relative;
-    background-image: url('banner.png'); 
-    background-position: center; 
-    background-repeat: no-repeat; 
-}
-
-a {
-    text-decoration: none;
-    color: inherit; 
-}
-
-.profile-img {
-    margin-top: 20px;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    border: 3px solid #d56696;
-}
-
-.header-content h1 {
-    size: 42px;
-    color: #eee8eb; 
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    position: relative; 
-}
-
-
-.header-content h1:hover {
-    transform: scale(1.07);
-}
-
-@media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 1.5em; 
-    }
-}
-
-#subheading {
-    color: Pink;
-    font-weight: bold;
-    padding-bottom: 30px;
-    font-size: 19px;
-    animation: slideIn 1s ease-out;
-}
-
-.header-content h1 a:hover {
-    color: #FFFFFF; 
-}
-
-.header-content p {
-    margin: 5px 0;
-    color: #d56696;  
-}
-
 .stats {
     display: flex;
     flex-direction: column;
