@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gurmehak's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="https://www.youtube.com/iframe_api"></script>
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
@@ -14,53 +14,75 @@
     <header class="bg-gray-900 border-b-2 border-pink-500 text-center py-5 relative bg-cover bg-center"
         style="background-image: url('banner.png');">
         <div class="header-content">
-            <img src="https://media.licdn.com/dms/image/D4E03AQEdw37a4fPdyQ/profile-displayphoto-shrink_800_800/0/1718487995020?e=1728518400&v=beta&t=u4vh1acvAOTuE0x3wXHzse2AR4O5MjunxftgIhBxC0M"
+            <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdw37a4fPdyQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718487995020?e=1735171200&v=beta&t=1lPUYOBUKrf_EaJmvabBAHGFLW2R90mUwVU2vG9Uemc"
                 alt="Profile Image" class="mt-5 rounded-full w-36 h-36 border-4 border-pink-500 mx-auto">
             <h1 class="text-4xl text-gray-200 font-bold hover:scale-105 transition-transform ease-in-out">Gurmehak Kaur Uppal</h1>
             <p id="subheading" class="text-pink-500 font-bold text-lg mt-2">Computer Programming and Analysis @ Seneca Polytechnic</p>
             <div class="stats flex flex-col items-center gap-3 mt-4 p-4 bg-white rounded-md shadow-lg w-1/4 mx-auto font-semibold text-gray-900 hover:scale-105 transition-transform">
-                <a href="#projects" class="hover:text-pink-500">Projects: 4</a>
+                <a href="#projects" class="hover:text-pink-500">Projects: 8</a>
                 <span id="viewCount">Youtube Views: 0</span>
             </div>
         </div>
     </header>
 
-    <section class="github-stats">
-        <h2 class="section-title"><<<< GitHub Stats >>>></h2>
-        <ul>
-            <li id="stars">Total Stars Earned: 0</li>
-            <li id="commits">Total Commits (2024): 0</li>
-            <li id="prs">Total PRs: 0</li>
-            <li id="issues">Total Issues: 0</li>
-            
-        </ul>
+        <section id="skills">
+        <div class="first">
+            <img class="icons" src="cc++.png">
+            <h2> C/C++ </h2>
+            <p> Algorithms Development | </p> <p> OOP | DSA</p>
+        </div>
+        <div class="second">
+            <img class="icons" src="webdev.png">    
+            <h2> Web Development </h2>
+            <p>HTML | CSS | JS | React | RestAPI</p>
+        </div>
+        <div class="third">
+            <img class="icons" src="dbs.png">      
+            <h2>Database Management</h2>       
+            <p>MySQL | Oracle SQL | PL/SQL | User Authentication | Joins | Subqueries</p>
+        </div>
+        <div class="third">
+            <img class="icons" src="https://media.istockphoto.com/id/931816548/vector/statistics-and-data-analysis.jpg?s=612x612&w=0&k=20&c=INebeeSSUGdsp1aRc-SGiFuKXUeIytGwtme5OICKklM=">      
+            <h2>Data Analysis</h2>       
+            <p>Python | Pandas | Matplotlib | Tableau | PowerBI</p>
+        </div>
+        <div class="fourth">
+            <img class="icons" src="https://img.freepik.com/free-vector/bug-fixing-software-testing-computer-virus-searching-tool-develops-web-optimization-antivirus-app-magnifier-cogwheel-monitor-design-element-concept-illustration_335657-1747.jpg">      
+            <h2>Testing & Automation</h2>       
+            <p>Selenium | Pytest | C++ unit test | Jenkins | BluePrism | Jira | Log files</p>
+        </div>
     </section>
-
+    
     <section id="projects">
-        <h2 class="section-title"><<<< Projects >>>></h2>
+        <h2 class="projects-section-title"><<<< Projects >>>></h2>
         <div class="project-grid">
             <div class="project-item">
                 <div class="project-content">
-                    <h3>Project 1: Delivery Company Simulator</h3>
-                    <p>I developed an intelligent routing system for a local delivery company operating within a city. This system optimizes routes for three delivery trucks, ensuring efficient package deliveries while considering truck capacity limits. It calculates the shortest paths avoiding obstacles, and assigns packages to the truck that requires the least deviation from its route. The system also balances loads by comparing available weight and volume capacity, ensuring optimal resource utilization. If no truck can accommodate a package, it's stored for next-day delivery.</p>
+                    <h3>Project 1: Agile Development & Testing</h3>
+                    <p> Gained experience in an industry-like development and test automation environment, adhering to SDLC and Agile methodologies. Designed software, developed automated test suites with 100 test cases, and used GitHub for collaboration and Jira to track and resolve 18+ bugs. Achieved 85% test coverage and delivered a high-quality product with 90% of test cases passed.</p>
+                    
                     <div class="stack"><h4>Tech Stack: C/C++</h4></div>
+                  
                     <a href="https://github.com/gurmehakkaur/Delivery-company-App" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-content">
-                    <h3>Project 2: Patient Appointment Booking App</h3>
-                    <p>This project simulates an app for a local veterinary clinic. It has all the functions required to edit and view a clinic database. It lets you manage patients as you can- View, search, add, edit and remove a patient record. Similarly, you can add and remove appointments, and can view them, even filtering by date. The data is stored in a comma-separated file. This project mainly uses structures, file input/output operations and pointers. The project is focused on modular programming, and each module is designed to be cohesive and loosely coupled with others.</p>
-                    <div class="stack"><h4>Tech Stack: C</h4></div>
+                    <h3>Project 2: Self Study Resources Website</h3>
+                    <p>Developed a full-stack website using Express.js and React.js, featuring a RESTful API that enables users to submit resources through forms. Implemented server-side automation to verify data and prevent duplicates by managing JSON files. Automated deployment and testing pipelines with Jenkins to streamline the development process, ensuring efficient and reliable updates. The project demonstrates expertise in API development, server-side logic, and CI/CD integration for modern web applications.</p>                 
+                    <div class="stack"><h4>Tech Stack:  Jenkins, JSON, React.js, Node.js, Express.js, JavaScript, HTML, CSS</h4></div>
+                  
                     <a href="https://github.com/gurmehakkaur/Patient-Appointment-Booking-App/" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-content">
-                    <h3>Project 3: TeachMe Educational Platform</h3>
-                    <p>This DBMS project focused on designing and building a comprehensive backend database for an educational platform that supports user management, course catalog, student enrollments, instructors' data, assessments (tests and scores), advertisements, and certifications. This model clearly defines each table and its relationship with other tables, to provide an effective Entity Relationship model. Business Rules for each relationship are clearly defined as well.</p>
-                    <div class="stack"><h4>Tech Stack: Oracle SQL Developer, Draw.io</h4></div>
-                    <a href="https://github.com/gurmehakkaur/gurmehakkaur/blob/main/DBMS/TeachME/" target="_blank">View Project</a>
+                    <h3>Project 3: TeachMe Dashboard</h3>
+                    <p>Created an analytical dashboard with SQL for complex data analysis and database management. Utilized joins and sub-queries to derive insights, and designed a scalable database with business logic and an ERD. Deployed using Salesforce’s ClearDB MySQL for real-time cloud-based interactions.</p>    
+                    
+                    <div class="stack"><h4>Tech Stack: Oracle SQL Developer, SalesForce, DBMS, Python- Matplotlib, Pandas, Seaborn</h4></div>
+                    
+                    <a href="https://github.com/gurmehakkaur/TeachMe" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-item">
@@ -68,24 +90,46 @@
                 <div class="project-content">
                     <h3>Project 4: My Portfolio Website</h3>
                     <p>This website itself is no less than a project, because it has been purely designed and built by me. The main part of this website is that it showcases real-time stats from my Github account and Youtube channel. I connected my Github using fetchGitHubStats() which requested data from my gitHub and the response was used by innerHtml. Connecting Youtube was a bit complicated as I had to first generate API key in order to fetch real-time data from Youtube.</p>
+                    
                     <div class="stack"><h4>Tech Stack: HTML, CSS, JS</h4></div>
                     <a href="https://github.com/gurmehakkaur/My-Portfolio" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-item">
+                
                 <div class="project-content">
-                    <h3>Project 3: TeachMe Educational Platform</h3>
-                    <p>This DBMS project focused on designing and building a comprehensive backend database for an educational platform that supports user management, course catalog, student enrollments, instructors' data, assessments (tests and scores), advertisements, and certifications. This model clearly defines each table and its relationship with other tables, to provide an effective Entity Relationship model. Business Rules for each relationship are clearly defined as well.</p>
-                    <div class="stack"><h4>Tech Stack: Oracle SQL Developer, Draw.io</h4></div>
-                    <a href="https://github.com/gurmehakkaur/gurmehakkaur/blob/main/DBMS/TeachME/" target="_blank">View Project</a>
+                    <h3>Project 5: Gurmehak's Shopping Website</h3>
+                    <p>Built a console-based e-commerce app in Java with product browsing, shopping cart, and user-specific discounts. Utilized file I/O for inventory management and designed an abstract User class with polymorphism for different discounts.</p>
+                    <div class="stack"><h4>Tech Stack: Java</h4></div>
+                    <div class="empty-text"> a </div>
+                    <a href="https://github.com/gurmehakkaur/Gurmehak-s-Shop" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-content">
-                    <h3>Project 3: TeachMe Educational Platform</h3>
-                    <p>This DBMS project focused on designing and building a comprehensive backend database for an educational platform that supports user management, course catalog, student enrollments, instructors' data, assessments (tests and scores), advertisements, and certifications. This model clearly defines each table and its relationship with other tables, to provide an effective Entity Relationship model. Business Rules for each relationship are clearly defined as well.</p>
-                    <div class="stack"><h4>Tech Stack: Oracle SQL Developer, Draw.io</h4></div>
-                    <a href="https://github.com/gurmehakkaur/gurmehakkaur/blob/main/DBMS/TeachME/" target="_blank">View Project</a>
+                    <h3>Project 6: Songify Web Application</h3>
+                    <p>A dynamic music app where users can request new artists, submit song URLs, and subscribe to newsletters, with all form submissions processed via POST requests. Used RESTful API integration for handling form data and asynchronous JavaScript (AJAX) to enable smooth. Optimized front-end performance with custom JavaScript for client-side validation and dynamic content updates, ensuring a responsive and user-centric experience.</p>
+                    <div class="empty-text"> a </div>
+                    <div class="stack"><h4>Tech Stack:  Html, CSS, JavaScript</h4></div>
+                    <div class="empty-text"> a </div>
+                    <a href="https://github.com/gurmehakkaur/Songify-website" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Project 7: Library Management System</h3>
+                    <p>Developed a library management system using C++ OOP principles, focusing on modularity and scalability. Implemented features for managing publications with data stored via fstream in a menu-driven interface. Optimized execution time and memory usage with efficient data structures, ensuring reliability through integration testing and collaborative code reviews.</p>
+                    
+                    <div class="stack"><h4>Tech Stack:  C++</h4></div>
+                    <a href="https://github.com/gurmehakkaur/CPA-Resources" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-content">
+                    <h3>Project 8: Automated Web Testing</h3>
+                    <p>Developed an automated testing solution using Selenium to validate the functionality and user experience of a college study room booking website. Simulated real-world user interactions to ensure compliance with booking rules, such as limiting reservations to two per student and validating registration details. Identified and reported critical bugs, including the acceptance of special characters in names and invalid college email addresses, which could lead to unauthorized bookings.</p>
+                    <div class="stack"><h4>Tech Stack:  Selenium, Python</h4></div>
+                    <a href="https://github.com/gurmehakkaur/Selenium_Proj" target="_blank">View Project</a>
                 </div>
             </div>
         </div>
@@ -104,27 +148,17 @@
         </div>
     </section>
     
-    <section id="skills">
-        <div class="first">
-            <img class="icons" src="cc++.png">
-            <h2> C/C++ </h2>
-            <p> Strong foundation in C/C++ concepts, with in depth understanding of four pillars of object oriented programming, Time and 
-                Space complexity, Dynamic Memory Management etc.
-            </p>
-        </div>
-        <div class="second">
-            <img class="icons" src="webdev.png">    
-            <h2> Web Development </h2>
-            <p>Proficient in creating responsive and interactive web applications using HTML, CSS, and JavaScript. Experience with modern 
-                frameworks and tools to build seamless user experiences.</p>
-        </div>
-        <div class="third">
-            <img class="icons" src="dbs.png">      
-            <h2> Oracle SQL, MySql </h2>       
-            <p>Skilled in designing and managing relational databases using Oracle SQL and MySQL. Expertise in writing complex queries, 
-                optimizing performance, and ensuring data integrity.</p>
-        </div>
+    <section class="github-stats">
+        <h2 class="section-title"><<<< GitHub Stats >>>></h2>
+        <ul>
+            <li id="stars">Total Stars Earned: 0</li>
+            <li id="commits">Total Commits (2024): 0</li>
+            <li id="prs">Total PRs: 0</li>
+            <li id="issues">Total Issues: 0</li>
+            
+        </ul>
     </section>
+
         
     <footer>
         <div class="socials">

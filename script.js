@@ -5,32 +5,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var player;
 
-    // This function is called when the YouTube IFrame API is ready
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('youtube-player', {
-            height: '315',  // Height of the player
-            width: '560',   // Width of the player
-            videoId: 'RGh1lfFFUWI',  // YouTube video ID (remove the `&t` part for the timestamp)
+            height: '315',  
+            width: '560',   
+            videoId: 'RGh1lfFFUWI',  
             events: {
-                'onReady': onPlayerReady  // Trigger onPlayerReady when the player is ready
+                'onReady': onPlayerReady
             }
         });
     }
     
-    // This function is called when the player is ready
+    
     function onPlayerReady(event) {
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
-                // When the video is at least 50% visible, play it
+                
                 if (entry.isIntersecting) {
                     player.playVideo();
                 } else {
-                    player.pauseVideo();  // Otherwise, pause the video
+                    player.pauseVideo();  
                 }
             });
-        }, { threshold: 0.5 });  // Trigger when 50% of the video is visible
+        }, { threshold: 0.5 });  
     
-        // Observe the YouTube player container
+        
         observer.observe(document.getElementById('youtube-player'));
     }
 }); 
@@ -42,8 +41,7 @@ function fetchGitHubStats() {
         .then(response => response.json())
         .then(data => {
             document.getElementById('stars').innerText = `Total Stars Earned: ${data.public_repos}`;
-            /*document.getElementById('followers').innerText = `followers ${data.followers}`;
-            document.getElementById('views').innerText = `views ${data.public_gists}`;*/
+            
          
         });
 
@@ -62,8 +60,6 @@ function fetchGitHubStats() {
         });
 }
 async function fetchYouTubeStats() {
-    const API_KEY = 'confidential'; 
-    const CHANNEL_ID = 'confidential';
 
     const url = `https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${CHANNEL_ID}&key=${API_KEY}`;
 
