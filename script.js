@@ -5,33 +5,34 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var player;
 
+    // This function is called when the YouTube IFrame API is ready
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('youtube-player', {
-            height: '315',
-            width: '560',
-            videoId: 'RGh1lfFFUWI&t', 
+            height: '315',  // Height of the player
+            width: '560',   // Width of the player
+            videoId: 'RGh1lfFFUWI',  // YouTube video ID (remove the `&t` part for the timestamp)
             events: {
-                'onReady': onPlayerReady
+                'onReady': onPlayerReady  // Trigger onPlayerReady when the player is ready
             }
         });
     }
-
- 
+    
+    // This function is called when the player is ready
     function onPlayerReady(event) {
         var observer = new IntersectionObserver(function(entries) {
             entries.forEach(entry => {
+                // When the video is at least 50% visible, play it
                 if (entry.isIntersecting) {
                     player.playVideo();
                 } else {
-                    player.pauseVideo(); 
+                    player.pauseVideo();  // Otherwise, pause the video
                 }
             });
-        }, { threshold: 0.5 }); 
-
+        }, { threshold: 0.5 });  // Trigger when 50% of the video is visible
+    
+        // Observe the YouTube player container
         observer.observe(document.getElementById('youtube-player'));
     }
-
-
 }); 
        
        
